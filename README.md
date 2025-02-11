@@ -24,7 +24,7 @@ Setup Instructions:
 
 1. Clone the repository:
 
- git clone <repository-url>
+ git clone https://github.com/saifullahali2000/blackwinstech.git
  cd contact-management-api
 
 2. Install Dependencies:
