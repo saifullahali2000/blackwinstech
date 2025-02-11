@@ -9,12 +9,11 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
-
-const connectLink = "mongodb+srv://saifullahali2000:HbJgDXuuI2diTndH@cluster0.eegwa.mongodb.net/blackwinstech";
+const mongoURI = process.env.MONGO_URI;
 
 // Connect to MongoDB
 mongoose
-  .connect(connectLink)
+  .connect(mongoURI)
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
